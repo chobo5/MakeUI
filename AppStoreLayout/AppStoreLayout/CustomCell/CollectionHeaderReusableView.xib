@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerView" id="U6b-Vx-4bR" customClass="CollectionHeaderReusableView" customModule="AppStoreLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ytx-De-1fb">
+                    <rect key="frame" x="0.0" y="0.0" width="137" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 필수게임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-tJ-Pjj">
+                            <rect key="frame" x="0.0" y="0.0" width="137" height="42.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="에디터가 손수 골랐습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7t-DY-NfE">
+                            <rect key="frame" x="0.0" y="42.5" width="137" height="28.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKH-QX-7iQ">
+                    <rect key="frame" x="324.5" y="20" width="72.5" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="모두보기"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="ytx-De-1fb" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="cVH-tR-p1K"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="ytx-De-1fb" secondAttribute="bottom" id="hkn-sx-nXY"/>
+                <constraint firstItem="ytx-De-1fb" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="nsP-L0-8Sb"/>
+                <constraint firstItem="bKH-QX-7iQ" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="o9D-sb-ZC4"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="bKH-QX-7iQ" secondAttribute="trailing" id="vyg-44-adK"/>
+            </constraints>
+            <connections>
+                <outlet property="subTitleLabel" destination="X7t-DY-NfE" id="rJm-f1-7VU"/>
+                <outlet property="titleLabel" destination="GEQ-tJ-Pjj" id="oeX-dJ-ANB"/>
+            </connections>
+            <point key="canvasLocation" x="193.47826086956522" y="102.79017857142857"/>
+        </collectionReusableView>
+    </objects>
+</document>
